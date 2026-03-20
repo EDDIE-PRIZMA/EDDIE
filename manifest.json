@@ -1,0 +1,19 @@
+{
+    "name": "EDDIE — UTAU Brasileiro",
+    "short_name": "EDDIE",
+    "description": "Site oficial do EDDIE, o primeiro UTAU brasileiro configurado para cantar em português brasileiro. Criado por Qkir0n em 2012.",
+    "start_url": "/EDDIE/",
+    "scope": "/EDDIE/",
+    "display": "standalone",
+    "background_color": "#0a0a0c",
+    "theme_color": "#00f2ff",
+    "lang": "pt-BR",
+    "icons": [
+        {
+            "src": "logo.webp",
+            "sizes": "any",
+            "type": "image/webp",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eddie-prizma.github.io/EDDIE/sitemap.xml
