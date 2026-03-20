@@ -10,9 +10,9 @@
     "lang": "pt-BR",
     "icons": [
         {
-            "src": "logo.webp",
+            "src": "favicon/favicon.png",
             "sizes": "any",
-            "type": "image/webp",
+            "type": "image/png",
             "purpose": "any maskable"
         }
     ]

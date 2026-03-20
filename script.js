@@ -83,6 +83,24 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
+    // Stagger reveal observer for child elements
+    const staggerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const children = entry.target.children;
+                Array.from(children).forEach((child, i) => {
+                    child.style.transitionDelay = `${i * 0.08}s`;
+                });
+                entry.target.classList.add('revealed');
+                staggerObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.stagger-reveal').forEach(el => {
+        staggerObserver.observe(el);
+    });
+
     // ============ PARALLAX TILT on EDDIE.webp (smooth lerp) ============
     const heroArt = document.querySelector('.hero-art');
     const heroChar = document.querySelector('.hero-character');
